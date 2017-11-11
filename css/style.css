@@ -14,13 +14,26 @@
 }
 
 .quarter-width {
-
+	width: 25%;
 }
 
 /****** HEADER SECTION ******/
+header {
+	background: #373f3c;
+}
 
 /****** ABOUT SECTION ******/
+#about {
+	background: #758763;
+}
+
+#dave {
+	background: #FFF;
+}
 
 /****** GALLERY SECTION ******/
 
 /****** CONTACT SECTION ******/
+footer {
+	background: #474d56;
+}
