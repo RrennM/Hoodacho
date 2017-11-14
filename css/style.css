@@ -1,3 +1,8 @@
+body {
+	margin: 0;
+	width: 100%;
+}
+
 
 /****** GRID SYSTEM ******/
 
@@ -20,20 +25,59 @@
 /****** HEADER SECTION ******/
 header {
 	background: #373f3c;
+	height: 800px;
+	position: relative;
+}
+
+header > div {
+	margin: 0 auto;
+}
+
+header #nav {
+	margin: 0 auto;
+	padding-top: 40px;
+	text-align: center;
+}
+
+nav a {
+	border-bottom: 2px solid #fff;
+	color: #FFF;
+	font-size: 140%;
+	padding: 0 70px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header  #container {
+	bottom: 0;
+	left: 50%;
+	margin: 40px 0 0 -40%;
+	position: absolute;
+	width: 80%;
+}
+
+header img { 
+	width: 100%;
 }
 
 /****** ABOUT SECTION ******/
 #about {
 	background: #758763;
+	height: 1200px;
 }
 
 #dave {
 	background: #FFF;
+	height: 600px;
 }
 
 /****** GALLERY SECTION ******/
+#gallery {
+	height: 800px;
+}
 
 /****** CONTACT SECTION ******/
 footer {
 	background: #474d56;
+	height: 700px;
 }
