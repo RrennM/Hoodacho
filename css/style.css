@@ -1,3 +1,9 @@
+/****** BASE STYLES ******/
+@font-face {
+	font-family: LoveStory;
+	src: url('../font/LoveStory.ttf') format('truetype');
+}
+
 body {
 	margin: 0;
 	width: 100%;
@@ -7,7 +13,8 @@ body {
 /****** GRID SYSTEM ******/
 
 .full-width {
-	width: 90%;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .half-width {
@@ -29,10 +36,6 @@ header {
 	position: relative;
 }
 
-header > div {
-	margin: 0 auto;
-}
-
 header #nav {
 	margin: 0 auto;
 	padding-top: 40px;
@@ -42,13 +45,14 @@ header #nav {
 nav a {
 	border-bottom: 2px solid #fff;
 	color: #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 140%;
 	padding: 0 70px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-header  #container {
+header #container {
 	bottom: 0;
 	left: 50%;
 	margin: 40px 0 0 -40%;
@@ -60,16 +64,74 @@ header img {
 	width: 100%;
 }
 
+
+
+
 /****** ABOUT SECTION ******/
 #about {
 	background: #758763;
 	height: 1200px;
 }
 
+#about .half-width {
+	float: left;
+}
+
 #dave {
 	background: #FFF;
 	height: 600px;
 }
+
+#daveImage {
+	height: 600px;
+}
+
+#daveImage img {
+	margin: 0 auto;
+	display: block;
+}
+
+#daveAbout {
+	/*float: left;*/
+	height: 600px;
+}
+
+#daveAbout, #hoodachoAbout {
+	text-align: center;
+}
+
+#daveAbout h2, #hoodachoAbout h2 {
+	font-family: 'LoveStory', serif;
+	font-size: 300%;
+	letter-spacing: 4px;
+	margin: 10%;
+}
+
+#daveAbout p, #hoodachoAbout p, #hoodachoAbout li {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 140%;
+	color: #333;
+}
+
+#hoodacho {
+	/*background: url(../img/hoodachoAbout04.png) no-repeat;*/
+	background-position: right;
+	height: 600px;
+}
+
+#hoodachoAbout h3 {
+	font-family: 'Vollkorn', serif;
+	font-size: 140%;
+}
+
+#hoodachoAbout li {
+	text-decoration: none;
+	list-style: none;
+	padding-bottom: 8px;
+}
+
+
+
 
 /****** GALLERY SECTION ******/
 #gallery {
