@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>Hoodacho Headware | Hand made in the PNW</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Vollkorn:400,600,700" rel="stylesheet">
 	</head>
 	<body>
 
-		<header >
-			<div class="full-width">
+		<header>
+			<div class="full-width" id="hero">
 				<div class="full-width" id="nav">
 				<!-- nav -->
 					<nav>
@@ -67,7 +68,7 @@
 				<div class="full-width">
 
 				<!-- Need to set up one individual product and then copy it 4x. Then.... Copy the whole row down for the lower row? -->
-					<!-- <div class="row" id="rowOne"> -->
+					<div class="row" id="rowOne">
 						<div class="quarter-width">
 							<a href="#"><img src="img/hoodachoGallery2.png" class="product" id="p1"></a>
 						</div>	
@@ -81,10 +82,10 @@
 							<a href="#"><img src="img/hoodachoGallery2.png" class="product" id="p1"></a>
 						</div>	
 						
-					<!-- </div> -->
+					</div>
 				</div>
 				<div class="full-width">
-					<!-- <div class="row" id="rowTwo"> -->
+					<div class="row" id="rowTwo">
 						<div class="quarter-width">
 							<a href="#"><img src="img/hoodachoGallery2.png" class="product" id="p1"></a>
 						</div>	
@@ -98,44 +99,94 @@
 							<a href="#"><img src="img/hoodachoGallery2.png" class="product" id="p1"></a>
 						</div>	
 						
-					<!-- </div> -->
+					</div>
 				</div>
 				
 			</section>
 		</body>
-		
+
+
+
 		<footer>
 			<!-- CONTACT SECTION -->
 			<div class="full-width" id="contact">
 				<div id="contact-header">
 					<h1>contact</h1>
 				</div>
-				<div class="half-width" id="social-media">
-					<h3>Add me on:</h3>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Etsy</a></li>
-					<h3>Email me!</h3>
-					<li><a href="#">DavidBrentHood@gmail.com</a></li>
+				<div class="half-width">
+					<div id="social-media">
+						<h3>Add or Like</h3>
+						<li><a href="https://www.facebook.com/davidbrenthood">Facebook</a></li>
+						<li><a href="https://www.etsy.com/shop/HoodachoHeadware">Etsy</a></li>
+						<h3>Email me!</h3>
+						<li><a href="mailto:DavidBrentHood@gmail.com?Subject=Hoodacho%20Question">DavidBrentHood@gmail.com</a></li>
+					</div>	
 				</div>
 
-				<div class="half-width"  id="testamonials">
-					<!-- This will change to the slideshow code -->
-					<div class="container">
-						<div id="person">
-							<img src="#">
-						</div>
-						<div id="praise">
-							<p>Why I love my Hoodacho!</p>
+				<div class="half-width">
+					<div  id="testamonials">
+						<div class="container">
+							<!-- not sure what to insert here yet...
+							May just make a thumbnail gallery for the meantime,
+							while I figure out horizantal slide shows -->
+							<div id="myCarousel" class="carousel slide" data-interval="7000" data-ride="carousel">
+							  <!-- Indicators -->
+								<ol class="carousel-indicators">
+						    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							    	<li data-target="#myCarousel" data-slide-to="1"></li>
+							    	<li data-target="#myCarousel" data-slide-to="2"></li>
+								</ol>
+
+							  <!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+							    	<div class="item active">
+										<!-- insert testmonial inner stuff -->
+										<img src="img/praise1.png" alt="First Slide"/>
+										<div class="container">
+											<p><span class="praiseBold">"... I</span> just love my Hoodacho! I can finally wear my Fall coats in Winter! <span class="praiseBold">"</span></p>
+										</div>
+						    		</div>
+							    	<div class="item">
+										<!-- insert testmonial inner stuff -->
+										<img src="img/praise1.png" alt="First Slide"/>
+										<div class="container">
+											<p><span class="praiseBold">"... I</span> just love my Hoodacho! I can finally wear my Fall coats in Winter! <span class="praiseBold">"</span></p>
+										</div>
+						    		</div>
+							    	<div class="item">
+										<!-- insert testmonial inner stuff -->
+										<img src="img/praise1.png" alt="First Slide"/>
+										<div class="container">
+											<p><span class="praiseBold">"... I</span> just love my Hoodacho! I can finally wear my Fall coats in Winter! <span class="praiseBold">"</span></p>
+										</div>
+						    		</div>
+							    </div>
+
+								<!-- Controls -->
+								<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								    <span class="sr-only">Preview</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    <span class="sr-only">Preview</span>
+								</a>
+						    </div>
 						</div>
 					</div>
 				</div>
 
 				<!-- Hoodacho Logo -->
 				<div class="container">
-					<a href="#header"><img src="#"></a>
+					<a href="#hero"><img src="img/hoodachoicon.png" alt="Hoodacho Icon" id="hoodacho-icon"></a>
 				</div>
 			</div>
 		</footer>
 
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>
