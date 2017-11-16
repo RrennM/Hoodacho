@@ -201,9 +201,9 @@ footer {
 
 #social-media, #testamonials {
 	background: #ACACAC;
+	border: 2px solid #000;
 	height: 350px;
 	list-style: none;
-	border: 2px solid #000;
 	margin: 0 auto;
 	max-width: 50%;
 }
@@ -227,8 +227,17 @@ footer {
 }
 
 #testamonials img {
-	margin: 0 auto;
+	margin: 40px auto;
 	max-width: 25%;
+}
+
+.carousel-inner p {
+	margin: 0 20px;
+}
+
+.carousel-inner span {
+	font-size: 140%;
+	font-weight: 700;
 }
 
 #hoodacho-icon {
