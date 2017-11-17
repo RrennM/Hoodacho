@@ -94,6 +94,10 @@ header img {
 	z-index: 0;
 }
 
+#daveImage img {
+	margin-left: 5%;
+}
+
 #daveAbout {
 	background: #FFF;
 	max-height: 600px;
@@ -113,6 +117,7 @@ header img {
 
 #daveAbout h2 {
 	margin-left: 40px;
+	margin-bottom: 40px;
 }
 
 #daveAbout p, #hoodachoAbout h3, #hoodachoAbout li {
@@ -133,8 +138,13 @@ header img {
 #hoodachoAbout h3 {
 	font-family: 'Vollkorn', serif;
 	font-size: 140%;
+	font-weight: 700;
 	margin-top: 25%;
 }
+
+ #hoodachoAbout li {
+ 	margin-bottom: 10px;
+ }
 
 #hoodachoImage img {
 	max-width: 100%;
