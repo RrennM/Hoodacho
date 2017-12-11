@@ -172,6 +172,7 @@ header {
 
 #gallery .row {
 	max-height: 100%;
+	margin: 0;
 }
 
 #rowTwo {
